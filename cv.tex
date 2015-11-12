@@ -1,0 +1,88 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Adapted from the Medium Length Graduate CV Template at http://www.latextemplates.com/template/medium-length-graduate-cv
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\documentclass[margin, 10pt]{res}
+
+\usepackage{helvet}
+\usepackage{href}
+\usepackage{multicol}
+
+\setlength{\textwidth}{5.1in}
+
+
+\begin{document}
+
+\moveleft.5\hoffset\centerline{\large\bf Tom Wallis}
+
+% \moveleft\hoffset\vbox{\hrule width\resumewidth height 1pt}\smallskip
+\vspace{10pt}
+
+\moveleft.5\hoffset\centerline{{\sl Web:} \href{http://tomwallis.net}}
+\moveleft.5\hoffset\centerline{{\sl Github:} \href{http://github.com/probablytom/}}
+\moveleft.5\hoffset\centerline{{\sl Email:} CV@tomwallis.net}
+\moveleft.5\hoffset\centerline{{\sl Mobile:} 07704825401}
+
+\vspace{5pt}
+
+\moveleft\hoffset\vbox{\hrule width\resumewidth height 1pt}\smallskip
+
+\begin{resume}
+
+\section{SUMMARY}
+A soon-to-be-graduate of Computing Science at Glasgow University. I quickly become passionate about curious problems that can be tackled from new angles. Currently, my focus lies in sociotechnical systems, and its application to project management and programming as well as security and risk. I have experience programming in teams and solo, as well as writing for academia and assisting in teaching environments. 
+
+\vspace{5pt}
+\moveleft\hoffset\vbox{\hrule width\resumewidth height 0.5pt}\smallskip
+
+\section{INTERESTS}
+% {\sl Technical:}
+\begin{multicols}{2}
+Sociotchnical Systems\\
+Organisational Science\\
+Project Management\\
+Workflow\\
+Software Engineering Practices\\
+Academic and Technical Writing\\
+System Security\\
+Modelling and Programming\\
+Applications of Design Patterns\\
+Data Visualisation
+\end{multicols}
+% {\sl Non-technical:}
+% \begin{multicols}{2}
+% Speciality Coffee\\
+% Fountain Pens\\
+% Personal Organisation\\
+% Indie Video Games
+% \end{multicols}
+
+
+\section{EXPERIENCE}
+
+{\sl Programming:} My view on programming is that it's a useful for making things that can help people in a real way. Last academic year, I attended the GU Tech Society Hackathon, with a team who I also completed by 3rd year group dissertation with. The project, a conversation-oriented ticket management system, is the focus of a soon-to-be-published academic paper. My dissertation project is a procedural modelling system for sociotechnical systems. It can be used to identify risk and assess the robustness of a sociotechnical system, which can function on a small scale to system-of-systems level modelling. I actively maintain a github account for all of my projects, and also use it for hosting some small static sites.\\
+I have experience using Django and Jekyll for creating websites, and usually write my projects in Python and Java. I also have experience with C, and am curious about functional languages, such as Haskell. \par
+{\sl Lab Demonstrating:} I am currently employed by the university as a lab demonstrator, helping to run practical sessions for \emph{Introduction to Java} and \emph{Professional Software Development} courses. This complements the classroom teaching I do as a part of my \emph{Computing Science in the Classroom} module this year.
+
+
+\section{SKILLS}
+
+{\sl Languages:} Python, Java, C, Javascript, UML, Pi Calculus \par
+{\sl Techniques:} Agile, Scrum, TDD, BDD, Continuous Integration \par 
+{\sl Personal:} Creativity, Lateral thinking, Logical analysis, Discipline \par
+{\sl Tools:} Unix, MacOS X, Vim, LaTeX, NVAlt, Unix shells, Jekyll, Django, Git, SVN, Jenkins, Trello, Eisenhower Matrices
+
+\section{PROJECTS}
+
+{\sl Albert:} Project Albert is an attempt to create an easy way to improvise children's bedtime stories. It is built on the concept of \emph{design patterns}, often used in architecture and software engineering. Albert is an ongoing attempt to make the techniques used in software engineering and the lessons learned from technology useful for the layman. The site is written in Jekyll and hosted on Github Pages.
+
+{\sl Behaviour Modelling:} My final year dissertation is a sociotechnical modelling system, written nominally in Python. (The system itself can work in any language, but Python keeps the code neat.) The models are built in such a way that they can be tested via code fuzzing, to simulate stress on the system. As the behaviour of the social part of the model begins to change, alternative emergant properties reveal themselves. This allows one to see the affects of people failing to stick to a designated workflow, or deviation from agreed-upon behaviour. Applications include project management and personal workflow, as well as security and safety-critical systems, such as the behavioural and technical aspects of safety on an airplane.
+
+{\sl Conversation-Oriented Ticketing Systems:} In software engineering, problems with a product are often raised in a ticket after a team has identified the bug. A problem arises, in that the transfer of information about the bug from ticketing systems can leave out or alter the ticket's metadata. In addition, maintenance of tickets as well as discussing the problem divides attention between platforms and wastes time copying information over. This project was to create an alternative ticketing system, where conversations were treated as implicit tickets, and metadata was extracted to accompany the discussion. The project was successful enough that it is now offered as an alternative to Trac for the 3rd year Team Project module at Glasgow University, and development is being continued this year by a member of the team as a 4th year dissertation. 
+
+{\sl N-ary Eisenhower Matrix:} The Eisenhower Matrix is used in agile development and for personal organisation by sorting tasks into quadrants based on urgency and importance, and then ordering these quadrants to create a task flow. Generally, eisenhower matrices work only on small scales, because a large collection of tasks needs to be ordered more finely than an Eisenhower Matrix will allow. Also, the method is designed for the paper organisational systems of the time it came into popularity. I have instead created an n-by-n Eisenhower Matrix of arbitrary precision, which can by dynamically readjusted for finer detail using digital filtering methods. I have searched for similar systems to no avail and must conclude that the system is original. Unlike its predecessor, the n-ary Eisenhower Matrix can scale to an organisation of any size, due to its feature of re-configurability. I use this to great personal affect in managing myself. 
+
+
+\end{resume}
+
+\end{document}
