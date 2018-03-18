@@ -1,30 +1,88 @@
-\documentclass{tufte-handout}
+\documentclass[a4paper,textheight=740px]{tufte-handout}
 \usepackage[usenames,dvipsnames,svgnames,table]{xcolor}
 \usepackage{indentfirst}
-\title{Tom Wallis}
+\title{Tom Wallis\hspace{20pt}\footnotesize{MSci Computing Science, Glasgow University}}}
 \date{}
+
+\newcommand{\projectlink}[1]{\marginnote{\url{#1}}}
+
 \begin{document}
+\vspace{-1cm}
 \maketitle
 
 \begin{abstract}
-	\marginnote{cv@tomwallis.net\\
+	\marginnote{
+    cv@tomwallis.net\\
 	\noindent \url{http://tomwallis.net/}\\
 \noindent Phone: 07704825401\\
-\noindent Address: 2/1 48 Murano Street\\ Glasgow\\ G20 7RU}
-I'm a computing science student from Glasgow University with an appetite for unusual solutions to complex problems.\\
-I like to do this by tying the knots between different subjects. This involves marrying a deep understanding of informatics and a breadth of knowledge from arts and sciences to come at problems from new angles. As a result, I work with systems modelling and algorithmics, as well as linguistics, culture, design and productivity studies.
+\noindent Address: 1/2 29 Crathie Drive\\ Glasgow\\ G11 7XE }
+I'm a pragmatic worker who enjoys actively solving problems. Where many people
+from a strong academic background drift toward theoretical and heady
+approaches in a narrow field, I enjoy getting my hands dirty with
+practical work, drawing on an enthusiasm for fields in STEM, social sciences and
+humanities to attack interesting problems in genuinely new ways.
+% It's not enough
+% to pursue new knowledge: I aim to put our academic discoveries to use in the
+% service of making a better world.
+
 \end{abstract}
 
-\section{Computing Science}
-Most computing science students have similar skills, like a fluency in languages such as Python, C, and Java. As well as standard taught languages, I have a solid foundation in \LaTeX, Javascript {\&} web technologies, Haskell, and practices like Agile and TDD.\marginnote{\url{https://github.com/probablytom}}\\
-However, the cream of the crop are set apart by an understanding of how to \emph{use} their skills. In addition to participating in a university hackathon, my dissertation explores my interest in computers and culture by modelling sociotechnical systems and assessing risk\marginnote{\url{https://github.com/probablytom/behaviour-modelling}}. My third year dissertation involved team organisation through a novel project management and ticketing system\marginnote{\url{https://github.com/darrenburns/TeamProject3}}. As a hobby, I have applied software engineering tools like design patterns to improvised storytelling\marginnote{\url{http://projectalbert.net/}}, with great success. 
+\section{Research}
+I'm a first year computing science PhD candidate from Glasgow University,
+studying new methods for modelling contingent behaviour (especially in
+sociotechnical systems).\par
 
-\section{Further Skills}
-With any ordinary graduate, one would expect at least some degree of proficiency in their area of study. An agile mind, however, learns all the time about a wealth of subjects. I have a curiosity in maths and physics, having studied both at university level. In my spare time, I gravitate toward learning about linguistics and design.\\
-A particular interest is typography and text-oriented design; this CV is designed with Matthew Butterick\marginnote{\url{http://practicaltypography.com/}} and Edward Tufte in mind. \\
-Both as an employee of Glasgow University and as an optional part of my courses, I have taught in both schools and university lab sessions. I have learned to explain ideas intuitively and at a range of ability levels, and I'm excited to share what I know with others.
+My research develops new ways to simluate variations in system behaviour when
+modelling, alongside my supervisor, Tim Storer. We are currently developing a
+series of libraries to do so, including
+ASP\projectlink{http://github.com/probablytom/asp}, an aspect-oriented
+programming (AOP) library encouraging separation of concerns in AOP,
+PyDySoFu\projectlink{http://github.com/probablytom/pydysofu}, a library which
+exploits ASP's design to implement process fuzzing, and Fuzzi
+Moss\projectlink{http://github.com/twsswt/fuzzi-moss}, which employs process
+fuzzing to inject human-like faults into the behaviours of sociotechnical
+agents. A preliminary paper on the research is due to be published in the CAISE
+forum 2018.
 
-\section{Other Interests}
-I enjoy music, podcasts, speciality coffee, fountain pens, and terrible movies when I'm not creating or learning. I'm always curious about etymologies, and I write sporadically about all of this at my blog. \marginnote{\url{http://blog.tomwallis.net}}
+
+\section{Education}
+\vspace{-0.5cm}
+\begin{figure}
+  \begin{adjustwidth}{-0.5cm}{}
+    \begin{tabular*}{\paperwidth-5cm}{r||@{\extracolsep{\fill}}rll}
+      \emph{Time} & \emph{Institution} & \emph{Qualification} & \emph{Grade}\\\hline\hline
+      2017 --- 2021 & Glasgow University & Ph.D Computing Science & Ongoing\\
+      2012 --- 2017 & Glasgow University & MSci Computing Science & B1 Average (2:1)\\
+      2006 --- 2012 & St. Mungos High School & \emph{N/A} & \begin{tabular}{l} AAB at Advanced
+                                                 Higher\\AAAABB at
+                                                 Higher\end{tabular}
+    \end{tabular*}
+  \end{adjustwidth}
+\end{figure}
+
+\section{Employment}
+\vspace{-0.5cm}
+\begin{figure}
+  \begin{adjustwidth}{-0.5cm}{}
+    \begin{tabular*}{\paperwidth-5cm}{r||rl@{\extracolsep{\fill}}l}
+      \emph{Time} & \emph{Workplace} & \emph{Job Title} & \emph{Reference Contact}\\\hline\hline
+      Jan 2018 --- Present & Glasgow University & Demonstrator \& Tutor & \\
+      May 2017 --- Sep 2017 & Obashi Tech & Software Engineer & \href{mailto:pjw@obashitech.com}{pjw@obashitech.com} \\
+      Sep 2016 --- May 2017 & Self-Employed & ERP \& Python Consultant & \\
+      June 2016 --- Sep 2016 & Gardenia Tech & Software Engineer & \href{mailto:contact@gardeniatech.com}{contact@gardeniatech.com}
+    \end{tabular*}
+  \end{adjustwidth}
+\end{figure}
+
+\vspace{0.5cm}
+
+These positions have variously tested my ability to learn adaptively, work
+strongly both in teams and on my own, and to take leading positions on large and
+important projects. Employers have found me to be an effective and flexible
+worker, but more importantly, a genuine asset to their teams in both individual
+and collaborative environments. To demonstrate: my main client as a
+self-employed consultant was my previous employer, Gardenia Technologies, and my
+subsequent employer, Obashi Technologies, now parially fund my postgraduate
+studies.
 
 \end{document}
